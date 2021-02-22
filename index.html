@@ -3,18 +3,52 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
+  <title>Iniciar Sesión</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/png" href="images/icon.png" />
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
-  <h1> hello world </h1>
-  
+    <div class="container">
+        
+        <div><img class="img-left" src="images/principal.png"></div>
+        
+        <div name="authentication-zone">
+            <div><img class="img-right" src="images/header.png"></div> 
+            
+            <div class="group-margin" >Para iniciar la sesión ingresa tu usuario y contraseña</div>
+
+            <div><input name="Ecom_User_ID" id="Ecom_User_ID" type="text" value="" tabindex="1" class="text fullWidth" placeholder="Usuario" autocomplete="off"></div>
+            <div><input id="Ecom_Password" name="Ecom_Password" type="password" maxlength="100" tabindex="2" class="text fullWidth" placeholder="Contrasena" autocomplete="off" onchange="$('#itesm64').attr('value',encode(document.getElementById('Ecom_Password').value))"></div>
+
+            <div class="botonimagen"><input type=image src="images/bimage.png" onclick="redireccionar()"></input></div>
+
+            <div class="start-urls"><a target="_blank" style="color: #294E8B; text-decoration: none;font-family: Segoe UI Light, Arial, Helvetica, sans-serif;float:left">¿Olvidaste tu contraseña? Usa la liga correspondiente:</a></div>
+           
+            <div class="list-urls">
+                <span style="font-size:12px;">
+                <ul>
+                    <li><a style="text-decoration:none" href="https://miscuentas.tec.mx/sspr/public/ForgottenPassword" target="_blank" >Alumnos y Egresados Tec de Monterrey</a></li>
+                    <li><a style="text-decoration:none" href="https://micuenta.tecmilenio.mx/IDM/portal/cn/GuestContainerPage/ITESMPageForgotPassword" target="_blank">Alumnnos Tecmilenio</a></li>
+                    <li><a style="text-decoration:none" href="https://miscuentas.tec.mx/sspr/public/ForgottenPassword" target="_blank" >Colaboradores</a></li></ul></span>
+            </div>
+
+            <div class="last-image"><input class="last-image" type=image src="images/footimage.png"></input></div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        function redireccionar(){
+            console.log("hey");
+            location.href="https://www.dictionary.com/e/wp-content/uploads/2018/03/its-a-trap.gif";  
+            //window.alert("HAZ SIDO HACKEADOOO");
+        } 
+        
+    </script>
 </body>
 </html>
